@@ -12,6 +12,9 @@
     if (!isset($first_name) || !isset($last_name) || !isset($age) || empty($first_name) || empty($last_name) || $age < 0) {
         $ok = FALSE;
     }
+
+    $first_name = htmlspecialchars($first_name);
+    $last_name = htmlspecialchars($last_name);
 ?>
 
 <!DOCTYPE html>
