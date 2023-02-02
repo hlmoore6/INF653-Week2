@@ -1,6 +1,6 @@
 <?php
-    $first_name = filter_input(INPUT_GET, 'first_name');
-    $last_name = filter_input(INPUT_GET, 'last_name');
+    $first_name = filter_input(INPUT_GET, 'first_name', FILTER_SANITIZE_SPECIAL_CHARS);
+    $last_name = filter_input(INPUT_GET, 'last_name', FILTER_SANITIZE_SPECIAL_CHARS);
     $age = filter_input(INPUT_GET, 'age', FILTER_VALIDATE_INT);
 
     $age_statement = "I am not old enough to vote in the United States.";
@@ -13,6 +13,7 @@
         $ok = FALSE;
     }
 ?>
+
 <!DOCTYPE html>
 <html>
     <head>
