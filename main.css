@@ -1,0 +1,19 @@
+body {
+    margin: 0;
+}
+
+#content {
+    width: 50%;
+
+    margin-inline: auto;
+    margin-top: 2em;
+
+    padding: 0.5em;
+
+    text-align: center;
+
+    background: lightblue;
+    font-size: large;
+
+    border-radius: 0.25em;
+}
